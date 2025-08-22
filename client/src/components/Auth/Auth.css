@@ -1,0 +1,397 @@
+/* Auth Container Styles */
+.auth-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f3f2ef;
+    padding: 20px;
+}
+
+.auth-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 400px;
+    padding: 24px;
+}
+
+.auth-header {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.auth-logo {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    background: #0077b5;
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-bottom: 16px;
+}
+
+.auth-header h1 {
+    font-size: 32px;
+    font-weight: 400;
+    color: #000000e6;
+    margin-bottom: 8px;
+}
+
+.auth-header p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Form Styles */
+.auth-form {
+    margin-bottom: 16px;
+}
+
+.form-group {
+    margin-bottom: 16px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #000000e6;
+    margin-bottom: 4px;
+}
+
+.form-input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #666;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: all 0.2s;
+    background: white;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: #0077b5;
+    box-shadow: 0 0 0 1px #0077b5;
+}
+
+.form-input.error {
+    border-color: #d11124;
+}
+
+.form-select {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #666;
+    border-radius: 4px;
+    font-size: 16px;
+    background: white;
+    cursor: pointer;
+}
+
+.password-input-wrapper {
+    position: relative;
+}
+
+.password-toggle {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: #666;
+    cursor: pointer;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.password-toggle:hover {
+    color: #000;
+}
+
+.error-message {
+    display: block;
+    color: #d11124;
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+.forgot-password-link {
+    display: inline-block;
+    color: #0077b5;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    margin-bottom: 16px;
+}
+
+.forgot-password-link:hover {
+    text-decoration: underline;
+}
+
+/* Button Styles */
+.btn {
+    padding: 10px 24px;
+    border: none;
+    border-radius: 24px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.btn-primary {
+    background: #0077b5;
+    color: white;
+}
+
+.btn-primary:hover:not(:disabled) {
+    background: #006097;
+}
+
+.btn-primary:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.btn-outline {
+    background: white;
+    color: #0077b5;
+    border: 1px solid #0077b5;
+}
+
+.btn-outline:hover {
+    background: #f3f2ef;
+    box-shadow: inset 0 0 0 1px #0077b5;
+}
+
+.btn-full {
+    width: 100%;
+}
+
+.btn-small {
+    padding: 6px 16px;
+    font-size: 14px;
+}
+
+/* Divider */
+.divider {
+    position: relative;
+    text-align: center;
+    margin: 24px 0;
+}
+
+.divider::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: #e0e0e0;
+}
+
+.divider span {
+    position: relative;
+    padding: 0 16px;
+    background: white;
+    color: #666;
+    font-size: 14px;
+}
+
+/* Demo Accounts */
+.demo-accounts {
+    margin: 16px 0;
+    padding: 16px;
+    background: #f3f2ef;
+    border-radius: 8px;
+}
+
+.demo-title {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.demo-buttons {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+}
+
+/* Progress Indicator */
+.progress-indicator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 32px;
+}
+
+.progress-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+.progress-step span {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #e0e0e0;
+    color: #666;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.progress-step.active span {
+    background: #0077b5;
+    color: white;
+}
+
+.progress-step p {
+    font-size: 12px;
+    color: #666;
+}
+
+.progress-line {
+    width: 60px;
+    height: 2px;
+    background: #e0e0e0;
+    margin: 0 8px;
+    margin-bottom: 20px;
+    transition: all 0.3s;
+}
+
+.progress-line.active {
+    background: #0077b5;
+}
+
+/* Password Strength */
+.password-strength {
+    margin: 16px 0;
+}
+
+.password-strength p {
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 8px;
+}
+
+.strength-bars {
+    display: flex;
+    gap: 4px;
+}
+
+.strength-bars .bar {
+    flex: 1;
+    height: 4px;
+    background: #e0e0e0;
+    border-radius: 2px;
+    transition: all 0.3s;
+}
+
+.strength-bars .bar.active {
+    background: #0077b5;
+}
+
+/* Form Actions */
+.form-actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 24px;
+}
+
+.form-actions .btn {
+    flex: 1;
+}
+
+/* Checkbox Group */
+.checkbox-group label {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #666;
+}
+
+.checkbox-group input[type="checkbox"] {
+    margin-top: 2px;
+    cursor: pointer;
+}
+
+/* Auth Footer */
+.auth-footer {
+    text-align: center;
+    padding-top: 16px;
+    border-top: 1px solid #e0e0e0;
+    font-size: 14px;
+    color: #666;
+}
+
+.auth-link {
+    color: #0077b5;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.auth-link:hover {
+    text-decoration: underline;
+}
+
+/* Loading Spinner */
+.spinner {
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .auth-card {
+        padding: 20px;
+    }
+
+    .auth-header h1 {
+        font-size: 24px;
+    }
+
+    .progress-line {
+        width: 40px;
+    }
+
+    .demo-buttons {
+        flex-direction: column;
+    }
+
+    .demo-buttons .btn {
+        width: 100%;
+    }
+}
